@@ -3,10 +3,13 @@ module Rool
   	def process(dataset)
       super
      	if dataset[@data_key].include?(@operand)
-     		return true
+     		self.result = true
      	else
-     		return false
+     		self.message = "Value passed does not belong in data array"
+     		puts message
+     		self.result = false
      	end
+     	return @result
 	  end
   end
 end

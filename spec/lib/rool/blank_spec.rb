@@ -3,7 +3,7 @@ describe "Rool::Blank" do
 
   	before :each do
       @data = {
-      	nothing: '',
+      	nothing: 'h',
       	nilVal: nil,
       	goodIdeas: [],
       	governmentInfo: {}
